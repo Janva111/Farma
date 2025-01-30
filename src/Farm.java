@@ -65,6 +65,12 @@ public class Farm {
         }
     }
 
+    public void petAnimal(Animal animal) {
+       if (animals.contains(animal)) {
+           animal.setSpecialCare(null);
+       }
+    }
+
     public void sellAnimal(Animal animal) {
         if (animals.contains(animal)) {
             if (animal.getSize() == Size.SMALL) {
